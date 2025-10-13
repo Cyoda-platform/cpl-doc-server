@@ -1,0 +1,4 @@
+/* Hide Products dropdown from navbar */
+.navbar-end > .navbar-item.has-dropdown {
+  display: none !important;
+}

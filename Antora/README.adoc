@@ -1,0 +1,26 @@
+= Readme
+
+Folder for files Asciidoc and code examples
+
+Install Antora using install-guide https://docs.antora.org/antora/latest/install-and-run-quickstart/[]
+
+.To build the site from git
+`npx antora --fetch antora-playbook.yml`
+
+.To build the site from local
+`npx antora --fetch antora-playbook-local.yml`
+
+NOTE: The cyoda-platform project has to be cloned from get "next" to the documentation project, else the relative path won't work, i.e.
+`SOME_PATH/documentation/Antora` +
+`SOME_PATH/cyoda-platform`
+
+We can add cyoda-plugins as soon as there is documentation there.
+
+We have to download the antora default-ui and customize this for Cyoda. See
+
+. https://docs.antora.org/antora-ui-default/
+. https://gitlab.com/antora/antora-ui-default
+
+
+
+

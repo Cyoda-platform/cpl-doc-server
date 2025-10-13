@@ -1,0 +1,33 @@
+site:
+  title: Cyoda Developer Documentation
+  start_page: Cyoda_User_Docs::index.adoc
+content:
+  sources:
+    - url: ../../cyoda-platform
+      branches: [3.2.x]
+      start_paths:
+        - antora-docs
+    - url: ../../cyoda-plugins
+      branches: [3.2.x]
+      start_paths:
+        - antora-docs
+    - url: ../../antora-docs
+      branches: [3.2]
+      start_paths:
+        - user-docs
+        - technical-docs
+output:
+  dir: ./build/site
+  clean: true
+asciidoc:
+  attributes:
+    kroki-server-url: https://docs.cyoda.org/kroki
+    kroki-fetch-diagram: true
+  extensions:
+    - "asciidoctor-kroki"
+
+ui:
+  bundle:
+    url: https://gitlab.com/antora/antora-ui-default/-/jobs/artifacts/HEAD/raw/build/ui-bundle.zip?job=bundle-stable
+    snapshot: true
+  supplemental_files: ./supplemental-ui
