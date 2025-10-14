@@ -4,6 +4,8 @@ site:
   # Format: https://<username>.github.io/<repository-name>
   url: https://cyoda-platform.github.io/cpl-doc-server
   start_page: Cyoda_User_Docs::index.adoc
+  keys:
+    logo: logo.svg
 
 content:
   sources:

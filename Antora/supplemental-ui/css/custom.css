@@ -1,4 +1,102 @@
+/* Logo styles */
+.navbar-logo {
+  max-height: 32px;
+  height: 32px;
+  margin-right: 12px;
+  vertical-align: middle;
+  padding: 0 !important;
+}
+
+.navbar-title {
+  font-weight: 600;
+  font-size: 20px;
+  vertical-align: middle;
+}
+
+.navbar-brand .navbar-item {
+  display: flex;
+  align-items: center;
+}
+
+/* Social icons styles */
+.social-icons {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.social-icons:after {
+  content: "";
+  height: 2rem;
+  border-inline-end: 1px solid rgb(193, 195, 200);
+  right: -5px;
+  position: relative;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(79, 184, 176);
+  transition: color 0.2s ease;
+  padding: 8px;
+}
+
+.social-icon:hover {
+  color: rgb(59, 164, 156);
+}
+
+.social-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Hide social icons on mobile */
+@media screen and (max-width: 1023px) {
+  .social-icons {
+    display: none;
+  }
+}
+
+.navbar-item__home {
+  padding-left: 0;
+}
+
 /* Hide Products dropdown from navbar */
 .navbar-end > .navbar-item.has-dropdown {
   display: none !important;
+}
+
+.navbar {
+  background: rgb(246, 247, 249);
+  border-bottom: 1px solid rgba(107, 106, 109, 0.2);
+}
+
+.navbar-brand .navbar-item {
+  color: rgb(79, 184, 176);
+}
+
+.nav, .toolbar, .nav-panel-explore {
+  background: rgb(255, 255, 255);
+}
+
+.nav {
+  border-inline-end: 1px solid rgba(107, 106, 109, 0.2);
+}
+
+footer.footer {
+  border-top: 1px solid rgba(79, 184, 176, 0.2);
+  background: rgb(246, 247, 249)
 }
