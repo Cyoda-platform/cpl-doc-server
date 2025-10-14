@@ -1,102 +1,152 @@
 /* Logo styles */
 .navbar-logo {
-  max-height: 32px;
-  height: 32px;
-  margin-right: 12px;
-  vertical-align: middle;
-  padding: 0 !important;
+    max-height: 32px;
+    height: 32px;
+    margin-right: 12px;
+    vertical-align: middle;
+    padding: 0 !important;
 }
 
 .navbar-title {
-  font-weight: 600;
-  font-size: 20px;
-  vertical-align: middle;
+    font-weight: 600;
+    font-size: 20px;
+    vertical-align: middle;
 }
 
 .navbar-brand .navbar-item {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 /* Social icons styles */
 .social-icons {
-  display: flex;
-  align-items: center;
-  margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
 }
 
 .social-icons:after {
-  content: "";
-  height: 2rem;
-  border-inline-end: 1px solid rgb(193, 195, 200);
-  right: -5px;
-  position: relative;
+    content: "";
+    height: 2rem;
+    border-inline-end: 1px solid rgb(193, 195, 200);
+    right: -5px;
+    position: relative;
 }
 
 .social-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(79, 184, 176);
-  transition: color 0.2s ease;
-  padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(79, 184, 176);
+    transition: color 0.2s ease;
+    padding: 8px;
 }
 
 .social-icon:hover {
-  color: rgb(59, 164, 156);
+    color: rgb(59, 164, 156);
 }
 
 .social-icon svg {
-  width: 16px;
-  height: 16px;
+    width: 16px;
+    height: 16px;
 }
 
 .sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
 
 /* Hide social icons on mobile */
 @media screen and (max-width: 1023px) {
-  .social-icons {
-    display: none;
-  }
+    .social-icons {
+        display: none;
+    }
 }
 
 .navbar-item__home {
-  padding-left: 0;
+    padding-left: 0;
 }
 
 /* Hide Products dropdown from navbar */
 .navbar-end > .navbar-item.has-dropdown {
-  display: none !important;
+    display: none !important;
 }
 
 .navbar {
-  background: rgb(246, 247, 249);
-  border-bottom: 1px solid rgba(107, 106, 109, 0.2);
+    background: rgb(246, 247, 249);
+    border-bottom: 1px solid rgba(107, 106, 109, 0.2);
 }
 
 .navbar-brand .navbar-item {
-  color: rgb(79, 184, 176);
+    color: rgb(79, 184, 176);
 }
 
 .nav, .toolbar, .nav-panel-explore {
-  background: rgb(255, 255, 255);
+    background: rgb(255, 255, 255);
 }
 
 .nav {
-  border-inline-end: 1px solid rgba(107, 106, 109, 0.2);
+    border-inline-end: 1px solid rgba(107, 106, 109, 0.2);
+}
+
+.nav a {
+    color: rgb(53, 56, 65) !important;
 }
 
 footer.footer {
-  border-top: 1px solid rgba(79, 184, 176, 0.2);
-  background: rgb(246, 247, 249)
+    border-top: 1px solid rgba(79, 184, 176, 0.2);
+    background: rgb(246, 247, 249)
+}
+
+.doc{
+    color: rgb(53, 56, 65);
+}
+
+.doc li::marker {
+    color: #4FB8B0;
+}
+
+.doc a {
+    color: #4FB8B0;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.doc a:hover {
+    color: #4FB8B0;
+    border-bottom-color: #4FB8B0;
+}
+
+.toc-menu a:hover {
+    color: #4FB8B0 !important;
+}
+
+.toc .toc-menu a.is-active{
+    border-left-color: #4FB8B0 !important;
+}
+
+.doc h1.page {
+    border-bottom: 3px solid #4FB8B0;
+    padding-bottom: .5rem;
+    margin-bottom: 1rem;
+}
+
+.doc h2:not(.discrete) {
+    border-bottom-color: #4FB8B0;
+    border-bottom-width: 2px;
+    display: inline-block;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+.doc h1, .doc h2, .doc h3, .doc h4, .doc h5, .doc h6 {
+    color: rgb(23, 24, 28) !important;
 }
