@@ -111,7 +111,7 @@ footer.footer {
     background: rgb(246, 247, 249)
 }
 
-.doc{
+.doc {
     color: rgb(53, 56, 65);
 }
 
@@ -135,7 +135,7 @@ footer.footer {
     color: #4FB8B0 !important;
 }
 
-.toc .toc-menu a.is-active{
+.toc .toc-menu a.is-active {
     border-left-color: #4FB8B0 !important;
 }
 
@@ -155,4 +155,31 @@ footer.footer {
 
 .doc h1, .doc h2, .doc h3, .doc h4, .doc h5, .doc h6 {
     color: rgb(23, 24, 28) !important;
+}
+
+.nav-item a {
+    text-decoration: none !important;
+}
+
+.nav-item-toggle + .nav-link {
+    display: block;
+    margin-bottom: 4px;
+}
+
+.nav-item:not(:has(.nav-item-toggle)) {
+    padding: 4px 8px;
+    margin-top: 0;
+}
+
+.nav-item.is-current-page.is-active:not(:has(.nav-item-toggle)) {
+    background: #4FB8B0 !important;
+    color: #000 !important;
+    border-right: 3px solid #4FB8B0;
+    border-radius: 4px;
+}
+
+.nav-item-toggle {
+    background: transparent url(../img/caret.svg) no-repeat 50% / 50%;
+    background-size: contain;
+    right: 0;
 }
