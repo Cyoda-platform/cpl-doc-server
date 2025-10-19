@@ -13,6 +13,12 @@
     vertical-align: middle;
 }
 
+@media screen and (max-width: 400px) {
+    .navbar-title {
+        font-size: 16px;
+    }
+}
+
 .navbar-brand .navbar-item {
     display: flex;
     align-items: center;
