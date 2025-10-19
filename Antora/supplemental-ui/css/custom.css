@@ -157,8 +157,17 @@ footer.footer {
     color: rgb(23, 24, 28) !important;
 }
 
+.nav-menu {
+    margin-right: 5px;
+}
+
+.nav-list {
+    margin-left: 6px;
+}
+
 .nav-item a {
     text-decoration: none !important;
+    padding: 4px 8px;
 }
 
 .nav-item-toggle + .nav-link {
@@ -166,12 +175,12 @@ footer.footer {
     margin-bottom: 4px;
 }
 
-.nav-item:not(:has(.nav-item-toggle)) {
-    padding: 4px 8px;
+.nav-item:not(:has(.nav-item-toggle)) a {
     margin-top: 0;
+    display: block;
 }
 
-.nav-item.is-current-page.is-active:not(:has(.nav-item-toggle)) {
+.nav-item.is-current-page.is-active:not(:has(.nav-item-toggle)) a {
     background: #4FB8B0 !important;
     color: #000 !important;
     border-right: 3px solid #4FB8B0;
@@ -182,4 +191,5 @@ footer.footer {
     background: transparent url(../img/caret.svg) no-repeat 50% / 50%;
     background-size: contain;
     right: 0;
+    margin-top: 3px;
 }
